@@ -103,13 +103,15 @@ class LeaderboardPage extends StatelessWidget {
                     ),
                   ],
                   rows: dataLeaderboardList.map((leaderboard) {
-                    return DataRow(cells: <DataCell>[
-                      DataCell(Text(leaderboard.rank)),
-                      DataCell(Text(leaderboard.name)),
-                      DataCell(Text(leaderboard.position)),
-                      DataCell(Text(leaderboard.location)),
-                      DataCell(Text(leaderboard.value.toString())),
-                    ]);
+                    return DataRow(
+                      cells: <DataCell>[
+                        DataCell(Text(leaderboard.rank)),
+                        DataCell(Text(leaderboard.name)),
+                        DataCell(Text(leaderboard.position)),
+                        DataCell(Text(leaderboard.location)),
+                        DataCell(Text(leaderboard.value.toString())),
+                      ],
+                    );
                   }).toList(),
                 ),
               ),

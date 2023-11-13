@@ -36,6 +36,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^2.3.5
+  introduction_screen: ^3.1.12
+  smooth_page_indicator: ^1.1.0
+  lottie: ^2.7.0
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +71,9 @@ flutter:
     - lib/images/success.png
     - lib/images/checkin.png
     - lib/images/documents.png
+    - lib/images/intro/onboarding1.png
+    - lib/images/intro/onboarding2.png
+    - lib/images/intro/onboarding3.png
 
     
   # An image asset can refer to one or more resolution-specific "variants", see
