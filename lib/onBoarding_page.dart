@@ -14,7 +14,7 @@ class OnBoardingPage extends StatefulWidget {
 
 class _OnBoardingPageState extends State<OnBoardingPage> {
 //Controller Page
-  PageController _controller = PageController();
+  final PageController _controller = PageController();
   bool onlastPage = false;
 
   @override
@@ -29,14 +29,14 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               onlastPage = (index == 2);
             });
           },
-          children: [
+          children: const [
             Intro1(),
             Intro2(),
             Intro3(),
           ],
         ),
         Container(
-          alignment: Alignment(0, 0.8),
+          alignment: const Alignment(0, 0.8),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -44,7 +44,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 onTap: () {
                   _controller.jumpToPage(2);
                 },
-                child: Text('Skip'),
+                child: const Text('Skip'),
               ),
               SmoothPageIndicator(controller: _controller, count: 3),
 
@@ -56,20 +56,20 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                           context,
                           MaterialPageRoute(
                             builder: (context) {
-                              return MainLevelup();
+                              return const MainLevelup();
                             },
                           ),
                         );
                       },
-                      child: Text('Done'),
+                      child: const Text('Done'),
                     )
                   : GestureDetector(
                       onTap: () {
                         _controller.nextPage(
-                            duration: Duration(milliseconds: 500),
+                            duration: const Duration(milliseconds: 500),
                             curve: Curves.easeIn);
                       },
-                      child: Text('Next'),
+                      child: const Text('Next'),
                     )
             ],
           ),
