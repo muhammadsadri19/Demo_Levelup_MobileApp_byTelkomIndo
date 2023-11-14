@@ -70,6 +70,10 @@ flutter:
     - lib/images/monitor.png
     - lib/images/success.png
     - lib/images/checkin.png
+    - lib/images/contract.png
+    - lib/images/docs.png
+    - lib/images/requirement.png
+    - lib/images/compliant.png
     - lib/images/documents.png
     - lib/images/logo/logo1.png
     - lib/images/logo/logo2.png

@@ -15,12 +15,12 @@ class Intro2 extends StatelessWidget {
             'lib/images/logo/logo1.png',
           ),
         ),
-        Padding(
+        const Padding(
             padding: EdgeInsets.only(right: 20, left: 20),
             child: Text(
               'LEVEL UP is present in collaboration with educational\ninstitutions and well-known companies in Indonesia to prepare a superior generation through an experiential learning journey.',
               textAlign: TextAlign.center,
-            ).animate().fade().slideY(curve: Curves.easeIn))
+            ))
       ],
     );
   }

@@ -210,7 +210,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
         const Padding(
-            padding: EdgeInsets.only(top: 20.0, left: 15.0, right: 15.0),
+            padding: EdgeInsets.only(top: 30.0, left: 15.0, right: 15.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -224,75 +224,216 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             )),
+
+        //Menu - Menu
         Padding(
-          padding: const EdgeInsets.only(top: 20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
-                children: [
-                  Image.asset(
-                    'lib/images/report.png',
-                    width: 35,
-                    height: 35,
-                  ),
-                  const Text(
-                    'Report',
-                    style: TextStyle(fontSize: 11),
-                  )
-                ],
+              Container(
+                height: 70.0,
+                width: 70.0,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 5,
+                          offset: const Offset(0, 3))
+                    ]),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/compliant.png',
+                      height: 30,
+                      width: 30,
+                    ),
+                    const Text(
+                      'Report',
+                      style: TextStyle(fontSize: 11),
+                    )
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  Image.asset(
-                    'lib/images/documents.png',
-                    width: 35,
-                    height: 35,
-                  ),
-                  const Text(
-                    'Report',
-                    style: TextStyle(fontSize: 11),
-                  )
-                ],
+              Container(
+                height: 70.0,
+                width: 70.0,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 5,
+                          offset: const Offset(0, 3))
+                    ]),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/report.png',
+                      height: 30,
+                      width: 30,
+                    ),
+                    const Text(
+                      'Graduation',
+                      style: TextStyle(fontSize: 11),
+                    )
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  Image.asset(
-                    'lib/images/report.png',
-                    width: 35,
-                    height: 35,
-                  ),
-                  const Text(
-                    'Report',
-                    style: TextStyle(fontSize: 11),
-                  )
-                ],
+              Container(
+                height: 70.0,
+                width: 70.0,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 5,
+                          offset: const Offset(0, 3))
+                    ]),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/docs.png',
+                      height: 30,
+                      width: 30,
+                    ),
+                    const Text(
+                      'Sprint',
+                      style: TextStyle(fontSize: 11),
+                    )
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  Image.asset(
-                    'lib/images/documents.png',
-                    width: 35,
-                    height: 35,
-                  ),
-                  const Text(
-                    'Report',
-                    style: TextStyle(fontSize: 11),
-                  )
-                ],
+              Container(
+                height: 70.0,
+                width: 70.0,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 5,
+                          offset: const Offset(0, 3))
+                    ]),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/documents.png',
+                      height: 30,
+                      width: 30,
+                    ),
+                    const Text(
+                      'Assesment',
+                      style: TextStyle(fontSize: 11),
+                    )
+                  ],
+                ),
               ),
-              Column(
-                children: [
-                  Image.asset(
-                    'lib/images/report.png',
-                    width: 35,
-                    height: 35,
-                  ),
-                  const Text(
-                    'Report',
-                    style: TextStyle(fontSize: 11),
-                  )
-                ],
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                height: 70.0,
+                width: 70.0,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 5,
+                          offset: const Offset(0, 3))
+                    ]),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/requirement.png',
+                      height: 30,
+                      width: 30,
+                    ),
+                    const Text(
+                      'Task',
+                      style: TextStyle(fontSize: 11),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: 70.0,
+                width: 70.0,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 5,
+                          offset: const Offset(0, 3))
+                    ]),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/documents.png',
+                      height: 30,
+                      width: 30,
+                    ),
+                    const Text(
+                      'Mentor',
+                      style: TextStyle(fontSize: 11),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: 70.0,
+                width: 70.0,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black.withOpacity(0.2),
+                          spreadRadius: 2,
+                          blurRadius: 5,
+                          offset: const Offset(0, 3))
+                    ]),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'lib/images/report.png',
+                      height: 30,
+                      width: 30,
+                    ),
+                    const Text(
+                      'Timeline',
+                      style: TextStyle(fontSize: 11),
+                    )
+                  ],
+                ),
               ),
             ],
           ),
