@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:levelup_id/models/leaderboard_model.dart';
-import 'package:levelup_id/pages/home_page.dart';
-import 'package:levelup_id/pages/job_page.dart';
-import 'package:levelup_id/pages/leaderboard_page.dart';
-import 'package:levelup_id/pages/okr_page.dart';
-import 'package:levelup_id/pages/profile_page.dart';
+import 'package:levelup_id/pages/menu/home_page.dart';
+import 'package:levelup_id/pages/menu/job_page.dart';
+import 'package:levelup_id/pages/menu/leaderboard_page.dart';
+import 'package:levelup_id/pages/menu/okr_page.dart';
+import 'package:levelup_id/pages/menu/profile_page.dart';
 
 class MainLevelup extends StatefulWidget {
   const MainLevelup({Key? key}) : super(key: key);
