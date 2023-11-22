@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 
 class Intro3 extends StatelessWidget {
   const Intro3({Key? key}) : super(key: key);
@@ -11,7 +10,7 @@ class Intro3 extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(top: 225, left: 20, right: 20),
-          child: Image.asset('lib/images/logo/logo4.png'),
+          child: Image.asset('images/logo/logo4.png'),
         ),
         const Padding(
             padding: EdgeInsets.only(right: 20, left: 20),

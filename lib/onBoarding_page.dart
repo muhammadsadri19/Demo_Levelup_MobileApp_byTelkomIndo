@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:levelup_id/main_levelup.dart';
-import 'package:levelup_id/pages/intro/intro1.dart';
-import 'package:levelup_id/pages/intro/intro2.dart';
-import 'package:levelup_id/pages/intro/intro3.dart';
+import 'package:levelup_id/app/modules/intro/intro1.dart';
+import 'package:levelup_id/app/modules/intro/intro2.dart';
+import 'package:levelup_id/app/modules/intro/intro3.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingPage extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:levelup_id/models/leaderboard_model.dart';
+import 'package:levelup_id/app/models/leaderboard_model.dart';
 
 class LeaderboardPage extends StatelessWidget {
   final DataLeaderboard leaderboard;

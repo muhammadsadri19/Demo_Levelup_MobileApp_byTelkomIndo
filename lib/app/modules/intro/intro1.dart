@@ -12,7 +12,7 @@ class Intro1 extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(bottom: 5, right: 20, left: 20),
           child: Image.asset(
-            'lib/images/logo/logo2.png',
+            'images/logo/logo2.png',
             width: 400,
             height: 100,
           ),

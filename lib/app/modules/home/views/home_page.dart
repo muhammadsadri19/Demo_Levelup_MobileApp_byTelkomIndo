@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:levelup_id/pages/absensi/condition_page.dart';
+import 'package:levelup_id/app/modules/home/views/condition_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
                       padding: EdgeInsets.only(left: 15.0, top: 15.0),
                       child: CircleAvatar(
                         radius: 30.0,
-                        backgroundImage: AssetImage('lib/images/profile.jpg'),
+                        backgroundImage: AssetImage('images/profile.jpg'),
                       ),
                     ),
                     Column(
@@ -97,7 +97,7 @@ class HomePage extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(30.0),
                       child: Image.asset(
-                        'lib/images/checkin.png',
+                        'images/checkin.png',
                         height: 40,
                         width: 40,
                       ),
@@ -130,7 +130,7 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          'lib/images/laptop.png',
+                          'images/laptop.png',
                           height: 40,
                           width: 40,
                         ),
@@ -166,7 +166,7 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          'lib/images/success.png',
+                          'images/success.png',
                           height: 40,
                           width: 40,
                         ),
@@ -205,7 +205,7 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'lib/images/monitor.png',
+                    'images/monitor.png',
                     height: 40,
                     width: 40,
                   ),
@@ -261,7 +261,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'lib/images/compliant.png',
+                        'images/compliant.png',
                         height: 30,
                         width: 30,
                       ),
@@ -290,7 +290,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'lib/images/report.png',
+                        'images/report.png',
                         height: 30,
                         width: 30,
                       ),
@@ -319,7 +319,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'lib/images/docs.png',
+                        'images/docs.png',
                         height: 30,
                         width: 30,
                       ),
@@ -348,7 +348,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'lib/images/documents.png',
+                        'images/documents.png',
                         height: 30,
                         width: 30,
                       ),
@@ -385,7 +385,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'lib/images/requirement.png',
+                        'images/requirement.png',
                         height: 30,
                         width: 30,
                       ),
@@ -414,7 +414,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'lib/images/documents.png',
+                        'images/documents.png',
                         height: 30,
                         width: 30,
                       ),
@@ -443,7 +443,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        'lib/images/report.png',
+                        'images/report.png',
                         height: 30,
                         width: 30,
                       ),
