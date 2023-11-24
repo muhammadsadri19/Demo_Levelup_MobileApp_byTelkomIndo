@@ -29,7 +29,7 @@ class _ConditionPageState extends State<ConditionPage> {
               Container(
                 height: height * .4,
                 child: Image.asset(
-                  'lib/images/bg_condition.jpg',
+                  'images/bg_condition.jpg',
                   width: width,
                   fit: BoxFit.cover,
                 ),

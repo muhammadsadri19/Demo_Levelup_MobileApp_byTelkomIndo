@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "749709458083",
+    "project_id": "levelup-by-telkom",
+    "storage_bucket": "levelup-by-telkom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749709458083:android:3cacb13410a24a3cb29d16",
+        "android_client_info": {
+          "package_name": "com.example.levelup_id"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAELChkroXkk9VjTvfSGixuYHpFGOwCoPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
