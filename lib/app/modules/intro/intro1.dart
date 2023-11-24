@@ -7,14 +7,29 @@ class Intro1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.only(bottom: 5, right: 20, left: 20),
-          child: Image.asset(
-            'images/logo/logo2.png',
-            width: 400,
-            height: 100,
+        Container(
+          margin: EdgeInsets.only(top: 300, right: 10, left: 10),
+          height: 200,
+          width: MediaQuery.of(context).size.width,
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.black.withOpacity(0.2),
+                    spreadRadius: 2,
+                    blurRadius: 5,
+                    offset: const Offset(0, 3))
+              ]),
+          child: Padding(
+            padding: EdgeInsets.all(5),
+            child: Image.asset(
+              'images/logo/logo2.png',
+              width: 400,
+              height: 100,
+            ),
           ),
         ),
         Padding(
