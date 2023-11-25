@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:levelup_id/app/modules/auth/signup/view/signup_page.dart';
 import 'package:levelup_id/main_levelup.dart';
 
 class SigninPage extends StatefulWidget {
@@ -33,11 +34,33 @@ class _SigninPageState extends State<SigninPage> {
     }
   }
 
+  void _showSignUpDialog() {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text('Sign Up'),
+            content: SignupPage(),
+          );
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Sign In'),
+        centerTitle: true,
+        actions: [
+          Container(
+            margin: EdgeInsets.only(right: 13),
+            child: Image.asset(
+              'images/logo/logotelkom.png',
+              height: 50,
+              width: 50,
+            ),
+          )
+        ],
       ),
       body: Center(
         child: Padding(
@@ -53,6 +76,9 @@ class _SigninPageState extends State<SigninPage> {
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Email',
+                    hintText: 'Enter your email',
+                    prefixIcon: Icon(Icons.email),
+                    // Tambahkan dekorasi tambahan sesuai keinginan Anda
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -75,6 +101,9 @@ class _SigninPageState extends State<SigninPage> {
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Password',
+                    hintText: 'Enter your password',
+                    prefixIcon: Icon(Icons.lock),
+                    // Tambahkan dekorasi tambahan sesuai keinginan Anda
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -92,12 +121,27 @@ class _SigninPageState extends State<SigninPage> {
                   height: 20,
                 ),
                 ElevatedButton(
-                    onPressed: () {
-                      if (_formKey.currentState!.validate()) {
-                        _handleSignIn();
-                      }
-                    },
-                    child: Text('Sign In'))
+                  onPressed: () {
+                    if (_formKey.currentState!.validate()) {
+                      _handleSignIn();
+                    }
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.blue, // Warna latar belakang tombol
+                    onPrimary: Colors.white, // Warna teks pada tombol
+                  ),
+                  child: Text('Sign In'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    _showSignUpDialog();
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.orange, // Customize button color
+                    onPrimary: Colors.white, // Customize text color
+                  ),
+                  child: Text('Sign Up'),
+                ),
               ],
             ),
           ),

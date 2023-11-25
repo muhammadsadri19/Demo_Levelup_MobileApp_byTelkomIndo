@@ -41,6 +41,7 @@ dependencies:
   flutter_animate: ^4.2.0+1
   firebase_core: ^2.23.0
   firebase_auth: ^4.14.1
+  icons_plus: ^4.0.0
 
 dev_dependencies:
   flutter_test:
@@ -82,6 +83,7 @@ flutter:
     - images/logo/logo2.png
     - images/logo/logo3.png
     - images/logo/logo4.png
+    - images/logo/logotelkom.png
 
     
   # An image asset can refer to one or more resolution-specific "variants", see
