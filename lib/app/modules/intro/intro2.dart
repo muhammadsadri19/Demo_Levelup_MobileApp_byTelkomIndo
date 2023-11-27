@@ -9,15 +9,15 @@ class Intro2 extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
-          margin: EdgeInsets.only(top: 300, right: 10, left: 10),
+          margin: EdgeInsets.only(top: 300),
           height: 200,
-          width: MediaQuery.of(context).size.width,
+          width: MediaQuery.of(context).size.width * 0.85,
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: const BorderRadius.all(Radius.circular(8.0)),
               boxShadow: [
                 BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
+                    color: Colors.blue.withOpacity(0.2),
                     spreadRadius: 2,
                     blurRadius: 5,
                     offset: const Offset(0, 3))

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:levelup_id/app/modules/auth/signin/view/signin_page.dart';
-import 'package:levelup_id/app/modules/home/views/home_page.dart';
 import 'package:levelup_id/app/modules/intro/intro1.dart';
 import 'package:levelup_id/app/modules/intro/intro2.dart';
 import 'package:levelup_id/app/modules/intro/intro3.dart';
